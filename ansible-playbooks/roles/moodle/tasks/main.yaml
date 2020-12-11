@@ -1,0 +1,20 @@
+- name: "Copy moodle config.php"
+  template: 
+    src: awslogs.conf.j2
+    dest: /etc/awslogs/awslogs.conf
+    owner: root
+    group: root
+    mode: '000444'
+
+- name: "Copy  install_moodle.sh"
+  template:
+    src: install_moodle.sh
+    dest: /tmp/install_moodle.sh
+    owner: root
+    group: root
+    mode: '000745'
+
+- name: "Run install_moodle.sh script"
+  script: /tmp/install_moodle.sh
+  become: true
+  become_user: root

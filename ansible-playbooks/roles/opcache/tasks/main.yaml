@@ -1,0 +1,17 @@
+- name: "Install the latest version of php-opcache"
+  yum:
+    name: php-opcache
+    state: latest
+
+- name: "Copy install_opcache.sh"
+  template:
+    src: install_opcache.sh
+    dest: /tmp/install_opcache.sh
+    owner: root
+    group: root
+    mode: '000745'
+
+- name: "Run install_optcache.sh script"
+  script: /tmp/install_opcache.sh
+  become: true
+  become_user: root

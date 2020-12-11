@@ -1,0 +1,18 @@
+- name: "Install the latest version of gcc-c++"
+  yum:
+    name: gcc-c++
+    state: latest
+
+- name: "Copy script install_cacheclient.sh"
+  template:
+    src: install_cacheclient.sh
+    dest: /tmp/install_cacheclient.sh
+    owner: root
+    group: root
+    mode: '000745'
+
+- name: "Run install_cacheclient.sh script"
+  script: /tmp/install_cacheclient.sh
+  become: true
+  become_user: root
+  

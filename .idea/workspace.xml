@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="507b0dff-5359-4a32-986f-cbabdeba1c0e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1kvPbHkdT7z1CkIR1zmxJwATMfg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../terraform" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Oleksandr_Rudenko2\Desktop\diplom_2020\ansible\ansible-playbooks\roles\webserver" />
+      <recent name="C:\Users\Oleksandr_Rudenko2\Desktop\diplom_2020\ansible\ansible-playbooks\roles\start_webserver" />
+      <recent name="C:\Users\Oleksandr_Rudenko2\Desktop\diplom_2020\ansible\ansible-playbooks\roles\opcache" />
+      <recent name="C:\Users\Oleksandr_Rudenko2\Desktop\diplom_2020\ansible\ansible-playbooks\roles\logs" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="507b0dff-5359-4a32-986f-cbabdeba1c0e" name="Default Changelist" comment="" />
+      <created>1606578161631</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606578161631</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="577" y="242" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606578180711">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="577" y="242" key="#com.intellij.fileTypes.FileTypeChooser/62.0.1474.864@62.0.1474.864" timestamp="1606578180711" />
+    <state x="580" y="190" key="FileChooserDialogImpl" timestamp="1606595694371">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="580" y="190" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1606595694371" />
+    <state x="310" y="78" key="SettingsEditor" timestamp="1606582976482">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="310" y="78" key="SettingsEditor/62.0.1474.864@62.0.1474.864" timestamp="1606582976482" />
+    <state x="505" y="188" width="588" height="488" key="find.popup" timestamp="1606594839791">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="505" y="188" width="588" height="488" key="find.popup/62.0.1474.864@62.0.1474.864" timestamp="1606594839791" />
+  </component>
+</project>

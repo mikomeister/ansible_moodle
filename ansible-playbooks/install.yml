@@ -1,0 +1,7 @@
+- hosts: localhost
+  become: true
+  roles:
+    -  role: logs
+    -  role: webserver
+    -  role: cacheclient
+

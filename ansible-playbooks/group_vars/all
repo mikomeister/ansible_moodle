@@ -1,0 +1,12 @@
+---
+aws_region: "eu-central-1"
+log_group: "moodle"
+rds_instance_arn: "xxx"
+database_endpoint_address: "xxx"
+database_name: "xxx"
+domain_name: "xxx"
+elastic_cache_endpoint_address: "xxx"
+moodle_locate: "xx"
+public_alb_hostname: "xxx"
+
+

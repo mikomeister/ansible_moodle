@@ -1,0 +1,59 @@
+---
+- name: "Get current instance id "
+  uri:
+    url: "http://169.254.169.254/latest/meta-data/instance-id"
+    method: GET
+    return_content: yes
+  register: instance_id
+
+- debug:
+    msg: "{{ instance_id.content }}"
+
+- debug:
+    msg: "{{ aws_region }}"
+
+
+
+- name: "Install required packages if they not installed yet"
+  yum: name={{ item }} state=present
+  with_items:
+    - python-pip
+    - python-virtualenv
+  when: ansible_pkg_mgr == "yum"
+
+- name: "Install the latest version of AWS Logs"
+  yum:
+    name: awslogs
+    state: latest
+
+- name: "Copy awslogs.conf file "
+  template:
+    src: awslogs.conf.j2
+    dest: /etc/awslogs/awslogs.conf
+    owner: root
+    group: root
+    mode: '000444'
+  vars:
+    instance_id: "{{ instance_id }}"
+
+- name: "Copy awscli.conf file"
+  template:
+    src: awscli.conf.j2
+    dest: /etc/awslogs/awscli.conf
+    owner: root
+    group: root
+    mode: '000444'
+
+- name: "Create state directory"
+  file:
+    path: /var/awslogs/state
+    state: directory
+
+- name: "Start systemd service"
+  service:
+    enabled: true
+    state: started
+    name: awslogsd
+
+
+

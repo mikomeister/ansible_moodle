@@ -1,0 +1,13 @@
+- name: "Copy create_site_conf.sh to file"
+  template:
+    src: create_site_conf.sh
+    dest: /tmp/create_site_conf.sh
+    owner: root
+    group: root
+    mode: '000745'
+    remote_src: yes
+
+- name: "Install site_conf.sh script"
+  script: /tmp/create_site_conf.sh
+  become: true
+  become_user: root 

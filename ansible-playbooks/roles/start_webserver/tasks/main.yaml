@@ -1,0 +1,5 @@
+- name: "Start webserver service"
+  service:
+    enabled: true
+    state: started
+    name: httpd
