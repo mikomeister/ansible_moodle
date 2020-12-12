@@ -6,6 +6,7 @@ sudo yum remove -y php-pecl-memcached
 
 wget -P /tmp/ https://elasticache-downloads.s3.amazonaws.com/ClusterClient/PHP-7.3/latest-64bit
 tar -xf '/tmp/latest-64bit' 
+mv amazon-elasticache-cluster-client.so /tmp/
 cp '/tmp/amazon-elasticache-cluster-client.so' /usr/lib64/php/modules/
 if [ ! -f /etc/php.d/50-memcached.ini ]; then
     touch /etc/php.d/50-memcached.ini
