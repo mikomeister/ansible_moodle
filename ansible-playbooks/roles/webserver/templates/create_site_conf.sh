@@ -6,6 +6,7 @@ if [ ! -f /etc/httpd/conf.d/moodle.conf ]; then
     touch /etc/httpd/conf.d/moodle.conf
     echo 'ServerName 127.0.0.1:80' >> /etc/httpd/conf.d/moodle.conf
     echo 'DocumentRoot /var/www/moodle/html' >> /etc/httpd/conf.d/moodle.conf
+    echo 'Timeout 300' >> /etc/httpd/conf.d/moodle.conf
     echo '<Directory /var/www/moodle/html>' >> /etc/httpd/conf.d/moodle.conf
     echo '  Options Indexes FollowSymLinks' >> /etc/httpd/conf.d/moodle.conf
     echo '  AllowOverride All' >> /etc/httpd/conf.d/moodle.conf

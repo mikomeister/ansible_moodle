@@ -1,12 +1,12 @@
 ---
 aws_region: "eu-central-1"
 log_group: "moodle"
-rds_instance_arn: "xxx"
-database_endpoint_address: "xxx"
-database_name: "xxx"
-domain_name: "xxx"
-elastic_cache_endpoint_address: "xxx"
-moodle_locate: "xx"
-public_alb_hostname: "xxx"
+rds_secret_name: "rds_creds"
+database_endpoint_address: "moodledb.cnzsd34thhae.eu-central-1.rds.amazonaws.com"
+database_name: "moodle"
+domain_name: "moodle.rudenko.link"
+elastic_cache_endpoint_address: "moodle-ro.n78cll.ng.0001.euc1.cache.amazonaws.com"
+moodle_locate: "en"
+public_alb_hostname: ""
 
 

@@ -1,7 +1,7 @@
 - name: "Copy moodle config.php"
   template: 
-    src: awslogs.conf.j2
-    dest: /etc/awslogs/awslogs.conf
+    src: config.php.j2
+    dest: /tmp/config.php
     owner: root
     group: root
     mode: '000444'

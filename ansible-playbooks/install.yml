@@ -3,5 +3,8 @@
   roles:
     -  role: logs
     -  role: webserver
+    -  role: moodle
     -  role: cacheclient
+    -  role: opcache
+    -  role: start_webserver
 
